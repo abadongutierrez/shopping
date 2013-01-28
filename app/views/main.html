@@ -1,9 +1,7 @@
-<div class="hero-unit">
-  <h1>Cheerio!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
-</div>
+<ul class="unstyled">
+  <li ng-repeat="item in catalog">
+    <h3>{{item.name}}</h3>
+    <img ng-src="{{item.img}}" width="200px"/>
+    {{item.price | currency}}
+</li>
+</ul>

@@ -24,6 +24,30 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <a class="brand" href="#/">Shopping App</a>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li>
+                    <a href="#/">Catalog</a>
+                  </li>
+                  <li>
+                    <a href="#/checkout">Checkout ({{basket.count()}})</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="hero-unit">
+            <h1>Angular Shopping App</h1>
+            <p>You can buy things. But not really.</p>
+          </div>
+        </div>
+
         <div class="container" ng-view></div>
 
         <script src="scripts/vendor/angular.js"></script>
