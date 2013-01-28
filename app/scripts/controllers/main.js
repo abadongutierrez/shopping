@@ -1,9 +1,5 @@
 'use strict';
 
-shoppingApp.controller('MainCtrl', function($scope) {
-  $scope.awesomeThings = [
-    'HTML5 Boilerplate',
-    'AngularJS',
-    'Testacular'
-  ];
+shoppingApp.controller('MainCtrl', function($scope, catalog) {
+  $scope.awesomeThings = catalog;
 });
