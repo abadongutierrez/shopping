@@ -1,7 +1,6 @@
 <ul class="unstyled">
   <li ng-repeat="item in catalog">
-    <h3>{{item.name}}</h3>
-    <img ng-src="{{item.img}}" width="200px"/>
-    {{item.price | currency}}
+    <product item="item"></product>
+    <a class="btn btn-primary" ng-click="basket.add(item)">Buy!</a>
 </li>
 </ul>
